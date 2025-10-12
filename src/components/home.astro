@@ -1,0 +1,58 @@
+---
+import { getCollection } from 'astro:content';
+import { LinkCard, CardGrid, Badge } from '@astrojs/starlight/components';
+
+const posts = (await getCollection('docs'))
+  .filter(post => post.id !== 'index')
+  .sort((a, b) => {
+    const nameA = a.id;
+    const nameB = b.id;
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    return 0;
+  });
+
+// Extract tags and remove duplicates
+const tags = posts.flatMap(item => item.data.tags);
+const uniqueTags = [...new Set(tags.filter(tag => tag !== undefined))];
+
+const getDescription = tags => {
+  if (!Array.isArray(tags)) {
+    return 'N.A.';
+  }
+  return tags.join(', ');
+};
+---
+
+<div class="main-content">
+  <div>
+    {
+      uniqueTags.map(tag => (
+        <Badge text={String(tag)} variant="success" size="large" />
+      ))
+    }
+  </div>
+  <hr />
+  <br />
+  <CardGrid>
+    {
+      posts.map(post => (
+        <LinkCard
+          title={post.data.title}
+          href={post.id}
+          description={getDescription(post.data.tags)}
+        />
+      ))
+    }
+  </CardGrid>
+</div>
+
+<style>
+  .main-content {
+    min-height: 100vh; /* Ensure scrollable area */
+  }
+</style>
