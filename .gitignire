@@ -1,0 +1,8 @@
+# dependencies
+node_modules/
+
+# generated types
+.astro/
+
+# custom
+!src/content/docs/index.mdx
