@@ -1,0 +1,17 @@
+---
+import BaseLayout from '@astrojs/starlight/layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <div class="main-content">
+    <slot />
+  </div>
+  <script src="/progress-bar.js" is:inline></script>
+</BaseLayout>
+
+<style>
+  .main-content {
+    min-height: 100vh; /* Ensure scrollable area */
+    overflow-y: auto; /* Enable scrolling */
+  }
+</style>
