@@ -1,0 +1,52 @@
+---
+title: Blair Docs
+description: Home page for Blair's beginner guide!
+head:
+  - tag: title
+    content: Blair Docs
+  - tag: style
+    content: |
+      .hero-html {
+        --size: 12rem;
+        font-size: var(--size);
+        justify-content: center;
+        line-height: var(--size);
+      }
+template: splash
+editUrl: false
+lastUpdated: false
+hero:
+  tagline: Blair is a Animanga card trading bot, enjoy collecting favorite cards from different anime series, games, etc. Try it out now and collect low print numbers while you can!
+  image:
+    alt: Card Gallery
+    file: https://raw.githubusercontent.com/Sethispr/blair/refs/heads/main/src/assets/PNG_HERE.png
+  actions:
+    - text: Get Started
+      link: intro/section
+      icon: open-book
+    - text: Support Server
+      link: https://discord.com/invite/LINK_HERE
+      icon: discord
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Next Steps
+
+<CardGrid stagger>
+  <Card title="Invite Link" icon="external">
+    Invite Blair using our [Oauth2
+    link](https://discord.com/oauth2/authorize?client_id=ID_HERE).
+  </Card>
+  <Card title="Configure your server" icon="setting">
+    Customize your server to set drop channels, prefix and more!
+  </Card>
+  <Card title="Check the new Blair website" icon="rocket">
+    Check out the [new official Blair website](https://blair.pages.dev/) to see your card collection, auctions, stats and more!
+  </Card>
+  <Card title="Vote for Blair" icon="heart">
+    Vote for Blair through the [top.gg website](https://top.gg/LINK_HERE) to get free rewards and
+    limited frames!
+  </Card>
+</CardGrid>
