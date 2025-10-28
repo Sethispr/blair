@@ -22,24 +22,6 @@ export default defineConfig({
       customCss: [
         './src/styles/custom.css',
       ],
-      sidebar: [
-        {
-          label: 'Welcome!',
-          autogenerate: { directory: 'intro' },
-        },
-        {
-          label: 'User Customization',
-          autogenerate: { directory: 'user customization' },
-        },
-        {
-          label: 'Server Setup',
-          autogenerate: { directory: 'server setup' },
-        },
-        {
-          label: 'General',
-          autogenerate: { directory: 'general' },
-        },
-      ],
       plugins: [
         starlightThemeRapide(),
         starlightImageZoom(),
