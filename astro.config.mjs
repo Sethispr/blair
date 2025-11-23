@@ -1,8 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import starlightThemeRapide from 'starlight-theme-rapide';
-import starlightImageZoom from 'starlight-image-zoom';
+import catppuccin from "@catppuccin/starlight";
 
 // https://astro.build/config
 export default defineConfig({
@@ -45,8 +44,9 @@ export default defineConfig({
         },
       ],
       plugins: [
-        starlightThemeRapide(),
-        starlightImageZoom(),
+        catppuccin({
+          dark: { flavor: "macchiato", accent: "sky" },
+          light: { flavor: "latte", accent: "sky" }
       ],
     }),
   ],
