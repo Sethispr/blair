@@ -6,18 +6,18 @@ import starlightImageZoom from 'starlight-image-zoom';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://sethispr.github.io/cupid-test/',
-  base: '/cupid-test',
+  site: 'https://sethispr.github.io/blair/',
+  base: '/blair',
   integrations: [
     starlight({
       title: 'Blair Docs',
       editLink: {
-        baseUrl: 'https://github.com/Sethispr/cupid-test/edit/main/',
+        baseUrl: 'https://github.com/Sethispr/blair/edit/main/',
       },
       lastUpdated: true,
       social: [
-        { icon: 'github', label: 'GitHub', href: 'https://github.com/sethispr/cupid-test/' },
-        { icon: 'discord', label: 'Discord', href: 'https://discord.gg/Yvvnm39PpB' },
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/sethispr/blair/' },
+        { icon: 'discord', label: 'Discord', href: 'https://discord.gg/' },
       ],
       customCss: [
         './src/styles/custom.css',
