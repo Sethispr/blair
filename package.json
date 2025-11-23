@@ -17,8 +17,7 @@
     "@astrojs/starlight": "^0.34.3",
     "astro": "^5.7.13",
     "starlight-blog": "^0.23.2",
-    "starlight-image-zoom": "^0.13.0",
-    "starlight-theme-rapide": "^0.5.1"
+    "@catppuccin/starlight": "^1.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
