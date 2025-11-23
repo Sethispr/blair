@@ -47,6 +47,7 @@ export default defineConfig({
         catppuccin({
           dark: { flavor: "macchiato", accent: "sky" },
           light: { flavor: "latte", accent: "sky" }
+        }),
       ],
     }),
   ],
