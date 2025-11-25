@@ -3,15 +3,14 @@ title: Prefix
 description: Page explaining how to use commands with the bot's prefix.
 ---
 
-The default prefix for Cupid Bot is `=`. You can also use the bot by **mentioning** it (e.g. `@Cupid`) or using **Discord slash commands** (e.g. `/`). Currently, the prefix cannot be changed.
+The default prefix for Blair is `b` or `B`. You can also use the bot by using **Discord slash commands** (e.g. `/`). Currently, the prefix cannot be changed.
 
-- **Default Prefix**: You can only use the prefix `=` in the **bot's DM**.
-- **Mention Method**: Mention `@Cupid` to use commands (e.g. `@Cupid id`)
-- **Slash Commands**: Use `/` for specific actions (e.g. `/identity`)
+- **Default Prefix**: You can use the prefix `b` or `B` (e.g. `bd`)
+- **Slash Commands**: Use `/` slash commands (e.g. `/drop`)
 
 :::note
 
-The `=` prefix is now deprecated. Only `@Cupid` mentions and `/` slash commands will be supported until Discord allows message intents.
+The `b` prefix *may* be unusable once we reach 100+ servers. If that happens, only `@Blair` mentions and `/` slash commands will be supported until Discord gives us message intents.
 
 :::
 
@@ -21,11 +20,9 @@ The `=` prefix is now deprecated. Only `@Cupid` mentions and `/` slash commands 
 
 **Do**:
 
-- `=nick shiro` (only works in DM's)
-- `@Cupid id`
-- `/clan`
+- `bpro
+- `/drop`
 
 **Don't**:
 
 - Try to change the prefix (not supported)
-- Use `=` commands in a channel/server (use `@Cupid` or `/` instead)
