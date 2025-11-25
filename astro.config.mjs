@@ -45,6 +45,7 @@ export default defineConfig({
         {
           label: 'Support',
           autogenerate: { directory: 'support' },
+        },
       ],
       plugins: [
         catppuccin({
