@@ -42,10 +42,13 @@ export default defineConfig({
           label: 'Clans',
           autogenerate: { directory: 'clans' },
         },
+        {
+          label: 'Support',
+          autogenerate: { directory: 'support' },
       ],
       plugins: [
         catppuccin({
-          dark: { flavor: "moccha", accent: "mauve" },
+          dark: { flavor: "mocha", accent: "mauve" },
           light: { flavor: "latte", accent: "mauve" }
         }),
       ],
