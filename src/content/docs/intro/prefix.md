@@ -20,9 +20,10 @@ The `b` prefix *may* be unusable once we reach 100+ servers. If that happens, on
 
 **Do**:
 
-- `bpro
+- `bpro`
 - `/drop`
 
 **Don't**:
 
 - Try to change the prefix (not supported)
+- Using any other prefix
